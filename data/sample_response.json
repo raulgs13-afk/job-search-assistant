@@ -1,0 +1,161 @@
+{
+  "count": 18,
+  "__CLASS__": "Adzuna::API::Response::JobSearchResults",
+  "results": [
+    {
+      "longitude": -6.004903,
+      "description": "Descripción de la empresa Porque trabajar en Sopra Steria , también es sentir Sopra Steria. Somos un reconocido líder europeo en consultoría, servicios digitales y desarrollo de software, con cerca de 56.000 empleados en casi 30 países y más de 4.000 en España. Nos enfocamos en las personas, en su formación y desarrollo profesional , lo que nos impulsa a crecer y mejorar constantemente. Tenemos pasión por lo digital y, al igual que tú, buscamos la mejor de las aventuras. Queremos que tu día a d…",
+      "redirect_url": "https://www.adzuna.es/details/5852204746?utm_medium=api&utm_source=41bdec12",
+      "id": "5852204746",
+      "location": {
+        "display_name": "Sevilla",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "España",
+          "Andalucía",
+          "Sevilla",
+          "Sevilla"
+        ]
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "unknown",
+        "label": "Unknown"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTg1MjIwNDc0NiIsInMiOiJKTUJ2S0wzUzhSR21DclhLcHNOcnVRIn0.7C9Vf-tyuD2y9IOy8twm6lwDk0k72S-5QBM8ijUeOGw",
+      "title": "Desarrollador/a Full Stack Python y Vue.js",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Sopra Steria"
+      },
+      "created": "2026-08-22T09:40:55Z",
+      "salary_is_predicted": "0",
+      "latitude": 37.407018
+    },
+    {
+      "salary_is_predicted": "0",
+      "latitude": 37.38979,
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "AgileEngine"
+      },
+      "created": "2026-10-20T05:15:18Z",
+      "title": "GCP Cloud Engineer ID89421",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiSk1CdktMM1M4UkdtQ3JYS3BzTnJ1USIsImkiOiI1OTM1MDU3MjA0In0.jrk5W2RIa9XbL_NYEQ5sHMWTqB-OjFqgDytNHLFw35g",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Trabajos en ingeniería",
+        "tag": "engineering-jobs"
+      },
+      "description": "AgileEngine is an Inc. 5000 company that creates award-winning software for Fortune 500 brands and trailblazing startups across 17 industries. We rank among the leaders in areas like application development and AI/ML, and our people-first culture has earned us multiple Best Place to Work awards. WHY JOIN US If you're looking for a place to grow, make an impact, and work with people who care, we'd love to meet you! ABOUT THE ROLE We are looking for a GCP Cloud Engineer to architect and manage cl…",
+      "longitude": -5.998954,
+      "redirect_url": "https://www.adzuna.es/details/5935057204?utm_medium=api&utm_source=41bdec12",
+      "id": "5935057204",
+      "location": {
+        "area": [
+          "España",
+          "Andalucía",
+          "Sevilla",
+          "Sevilla"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Sevilla"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job"
+    },
+    {
+      "created": "2026-10-20T05:14:13Z",
+      "company": {
+        "display_name": "AgileEngine",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "latitude": 37.38979,
+      "salary_is_predicted": "0",
+      "id": "5935056226",
+      "redirect_url": "https://www.adzuna.es/details/5935056226?utm_medium=api&utm_source=41bdec12",
+      "location": {
+        "display_name": "Sevilla",
+        "area": [
+          "España",
+          "Andalucía",
+          "Sevilla",
+          "Sevilla"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "longitude": -5.998954,
+      "description": "AgileEngine is an Inc. 5000 company that creates award-winning software for Fortune 500 brands and trailblazing startups across 17 industries. We rank among the leaders in areas like application development and AI/ML, and our people-first culture has earned us multiple Best Place to Work awards. WHY JOIN US If you're looking for a place to grow, make an impact, and work with people who care, we'd love to meet you! ABOUT THE ROLE We are looking for a GCP Cloud Engineer to architect and manage cl…",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiSk1CdktMM1M4UkdtQ3JYS3BzTnJ1USIsImkiOiI1OTM1MDU2MjI2In0.Ftjtuuj1_qWXLVCDaZfXDb-dOZAvJw-Tbpc04HmFC8k",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Trabajos en ingeniería",
+        "tag": "engineering-jobs"
+      },
+      "title": "Ingeniero/a Cloud GCP ID89421"
+    },
+    {
+      "longitude": -5.998954,
+      "description": "Administrador de Linux Company: DifiStore Digital Sevilla (Warm Up) Location: Calle Recaredo, 30, 41003 Sevilla, Andalucía, Spain Salary: €2,700 per month Job Type: Full-time Job Description DifiStore Digital Sevilla is seeking an experienced and proactive Linux Administrator to join our IT operations team. In this role, you will be responsible for installing, configuring, maintaining, and securing Linux-based servers and infrastructure to ensure optimal system performance and availability. You…",
+      "location": {
+        "display_name": "Sevilla",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "España",
+          "Andalucía",
+          "Sevilla",
+          "Sevilla"
+        ]
+      },
+      "redirect_url": "https://www.adzuna.es/details/5781366155?utm_medium=api&utm_source=41bdec12",
+      "id": "5781366155",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTc4MTM2NjE1NSIsInMiOiJKTUJ2S0wzUzhSR21DclhLcHNOcnVRIn0.IG6JnNaNY9IM2mVBM34NEFJnCTf21U0BfM3Lef_SqtU",
+      "title": "Administrador de Linux",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "unknown",
+        "label": "Unknown"
+      },
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "DifiStore Digital Sevilla"
+      },
+      "created": "2026-06-29T22:43:10Z",
+      "salary_is_predicted": "0",
+      "latitude": 37.38979
+    },
+    {
+      "longitude": -5.998954,
+      "description": "Recopilar y analizar datos relevantes del sector FMCG para identificar tendencias y patrones. Elaborar informes detallados para diferentes departamentos internos. Gestionar bases de datos y asegurar la calidad y precisión de la información. Colaborar con equipos técnicos para mejorar procesos y herramientas de análisis. Presentar hallazgos de manera clara y comprensible a las partes interesadas. Proponer mejoras basadas en el análisis de datos para optimizar procesos. El/la candidato/a seleccio…",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "redirect_url": "https://www.adzuna.es/details/5941380100?utm_medium=api&utm_source=41bdec12",
+      "id": "5941380100",
+      "location": {
+        "area": [
+          "España",
+          "Andalucía",
+          "Sevilla",
+          "Sevilla"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Sevilla"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0MTM4MDEwMCIsInMiOiJKTUJ2S0wzUzhSR21DclhLcHNOcnVRIn0.hXl10RExkC8MUYrKc6F9Ye-j6mZ_RPquePirjczhrrQ",
+      "title": "Junior Data Analyst",
+      "category": {
+        "tag": "unknown",
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "company": {
+        "display_name": "Michael Page",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "created": "2026-10-25T12:22:37Z",
+      "salary_is_predicted": "0",
+      "latitude": 37.38979
+    }
+  ]
+}
