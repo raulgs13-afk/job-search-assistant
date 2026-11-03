@@ -19,6 +19,17 @@ CREATE TABLE IF NOT EXISTS jobs (
     fetched_at TEXT NOT NULL,
     UNIQUE (source, external_id)
 );
+
+CREATE TABLE IF NOT EXISTS scores (
+    job_id INTEGER PRIMARY KEY,
+    best_profile TEXT NOT NULL,
+    score INTEGER NOT NULL,
+    reasons TEXT NOT NULL,          -- JSON como texto
+    missing_skills TEXT NOT NULL,   -- JSON como texto
+    model TEXT NOT NULL,
+    scored_at TEXT NOT NULL,
+    FOREIGN KEY (job_id) REFERENCES jobs (id)
+);
 """
 
 

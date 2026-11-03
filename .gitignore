@@ -6,3 +6,5 @@ data/*.db
 *.egg-info/
 .pytest_cache/
 explore.py
+data/cvs/
+check_skipped.py
