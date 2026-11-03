@@ -12,6 +12,8 @@ dependencies = [
     "python-dotenv",
     "pydantic",
     "anthropic",
+    "fastapi",
+    "uvicorn",
 ]
 
 [tool.setuptools.packages.find]
