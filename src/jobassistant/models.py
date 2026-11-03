@@ -1,7 +1,6 @@
-from datetime import datetime
-
 import unicodedata
 from datetime import datetime, timedelta, timezone
+from typing import Literal
 
 from pydantic import BaseModel, Field, HttpUrl, field_validator
 
@@ -60,3 +59,11 @@ class JobPosting(BaseModel):
         return self.is_recent(search.max_days_old) and self.matches_locations(
             search.locations
         )
+
+class JobScore(BaseModel):
+    """Resultado de puntuar una oferta contra tus perfiles."""
+
+    best_profile: Literal["software_ia", "biomedica_consultoria", "none"]
+    score: int = Field(ge=0, le=100)
+    reasons: list[str] = Field(max_length=3)
+    missing_skills: list[str] = Field(default_factory=list, max_length=5)
