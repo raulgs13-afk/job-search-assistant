@@ -26,6 +26,7 @@ def main() -> None:
     parser.add_argument("--limit", type=int, default=10, help="Máx. ofertas a puntuar")
     parser.add_argument("--top", type=int, default=15, help="Cuántas mostrar en el ranking")
     parser.add_argument("--rescore", action="store_true", help="Borrar scores y puntuar de nuevo")
+    parser.add_argument("--hide-urls", action="store_true", help="No mostrar enlaces")
     args = parser.parse_args()
 
     conn = get_connection()
@@ -72,14 +73,16 @@ def main() -> None:
         print(f"\nDescartadas por regla (sin gastar API): {skipped}")
 
         for row in list_ranked(conn)[: args.top]:
-            print(f"\n[{row['score']}] {row['title']} | {row['company']} | {row['location']}")
+            company = row["company"] or "Empresa no indicada"
+            print(f"\n[{row['score']}] {row['title']} | {company} | {row['location']}")
             print(f"    CV recomendado: {row['best_profile']}")
             level = row["level_evidence"]
             hint = "" if level == "explicit_junior" else "  (verifica los años de experiencia en la oferta completa)"
             print(f"    Nivel: {level}{hint}")
             print(f"    Motivos: {'; '.join(json.loads(row['reasons']))}")
             print(f"    Faltan: {', '.join(json.loads(row['missing_skills'])) or '-'}")
-            print(f"    {row['url']}")
+            if not args.hide_urls:
+                print(f"    {row['url']}")
         return
 
     for row in list_jobs(conn):
