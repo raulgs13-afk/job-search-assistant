@@ -8,3 +8,5 @@ data/*.db
 explore.py
 data/cvs/
 check_skipped.py
+data/eval_to_read.md
+check_skipped.py

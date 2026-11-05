@@ -63,13 +63,15 @@ def save_score(conn, job_id: int, score, model: str) -> None:
     conn.execute(
         """
         INSERT OR REPLACE INTO scores
-            (job_id, best_profile, score, reasons, missing_skills, model, scored_at)
-        VALUES (?, ?, ?, ?, ?, ?, ?)
+            (job_id, best_profile, score, level_evidence, reasons,
+             missing_skills, model, scored_at)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
         """,
         (
             job_id,
             score.best_profile,
             score.score,
+            score.level_evidence,
             json.dumps(score.reasons, ensure_ascii=False),
             json.dumps(score.missing_skills, ensure_ascii=False),
             model,
@@ -83,7 +85,8 @@ def list_ranked(conn, min_score: int = 0) -> list[sqlite3.Row]:
     return conn.execute(
         """
         SELECT j.title, j.company, j.location, j.url,
-               s.score, s.best_profile, s.reasons, s.missing_skills
+               s.score, s.best_profile, s.level_evidence,
+               s.reasons, s.missing_skills
         FROM jobs j JOIN scores s ON s.job_id = j.id
         WHERE s.score >= ?
         ORDER BY s.score DESC

@@ -62,7 +62,7 @@ class JobPosting(BaseModel):
 
 class JobScore(BaseModel):
     """Resultado de puntuar una oferta contra tus perfiles."""
-
+    level_evidence: Literal["explicit_junior", "unknown", "explicit_senior"] = "unknown"
     best_profile: Literal["software_ia", "biomedica_consultoria", "none"]
     score: int = Field(ge=0, le=100)
     reasons: list[str] = Field(max_length=3)

@@ -1,0 +1,3 @@
+{"date": "2026-11-04T11:58:18.133944+00:00", "model": "claude-haiku-5-5", "note": "v2: prompt con roles objetivo", "cases": 18, "exact_accuracy": 0.444, "severe_errors": 3, "pair_ordering": 0.846}
+{"date": "2026-11-04T13:06:12.077777+00:00", "model": "claude-haiku-5-5", "note": "v2 corregido: sin ofertas caducadas", "cases": 11, "exact_accuracy": 0.455, "severe_errors": 4, "pair_ordering": 0.75}
+{"date": "2026-11-05T10:27:06.428146+00:00", "model": "claude-haiku-5-5", "note": "v2 + level_evidence, 20+ casos", "cases": 15, "exact_accuracy": 0.467, "severe_errors": 4, "severe_unknown_level": 4, "pair_ordering": 0.719}

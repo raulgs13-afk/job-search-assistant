@@ -32,6 +32,7 @@ class RankedJobOut(BaseModel):
     url: str
     score: int
     best_profile: str
+    level_evidence: str
     reasons: list[str]
     missing_skills: list[str]
 
@@ -78,6 +79,7 @@ def get_ranked(
             url=r["url"],
             score=r["score"],
             best_profile=r["best_profile"],
+            level_evidence=r["level_evidence"],
             reasons=json.loads(r["reasons"]),
             missing_skills=json.loads(r["missing_skills"]),
         )

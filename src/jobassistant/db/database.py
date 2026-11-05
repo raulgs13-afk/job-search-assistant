@@ -24,6 +24,7 @@ CREATE TABLE IF NOT EXISTS scores (
     job_id INTEGER PRIMARY KEY,
     best_profile TEXT NOT NULL,
     score INTEGER NOT NULL,
+    level_evidence TEXT NOT NULL DEFAULT 'unknown',
     reasons TEXT NOT NULL,          -- JSON como texto
     missing_skills TEXT NOT NULL,   -- JSON como texto
     model TEXT NOT NULL,
@@ -43,4 +44,9 @@ def get_connection(
 
 def init_db(conn: sqlite3.Connection) -> None:
     conn.executescript(SCHEMA)
+    cols = [r[1] for r in conn.execute("PRAGMA table_info(scores)")]
+    if "level_evidence" not in cols:
+        conn.execute(
+            "ALTER TABLE scores ADD COLUMN level_evidence TEXT NOT NULL DEFAULT 'unknown'"
+        )
     conn.commit()

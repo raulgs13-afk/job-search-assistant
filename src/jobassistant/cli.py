@@ -56,6 +56,7 @@ def main() -> None:
                     JobScore(
                         best_profile="none",
                         score=0,
+                        level_evidence="unknown",
                         reasons=[f"Descartada por regla: {reason}"],
                         missing_skills=[],
                     ),
@@ -73,6 +74,9 @@ def main() -> None:
         for row in list_ranked(conn)[: args.top]:
             print(f"\n[{row['score']}] {row['title']} | {row['company']} | {row['location']}")
             print(f"    CV recomendado: {row['best_profile']}")
+            level = row["level_evidence"]
+            hint = "" if level == "explicit_junior" else "  (verifica los años de experiencia en la oferta completa)"
+            print(f"    Nivel: {level}{hint}")
             print(f"    Motivos: {'; '.join(json.loads(row['reasons']))}")
             print(f"    Faltan: {', '.join(json.loads(row['missing_skills'])) or '-'}")
             print(f"    {row['url']}")
