@@ -16,6 +16,12 @@ dependencies = [
     "uvicorn",
 ]
 
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "httpx2",
+]
+
 [tool.setuptools.packages.find]
 where = ["src"]
 

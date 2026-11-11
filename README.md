@@ -48,7 +48,7 @@ git clone https://github.com/raulgs13-afk/job-search-assistant.git
 cd job-search-assistant
 python -m venv .venv
 .venv\Scripts\activate          # Windows (en Mac/Linux: source .venv/bin/activate)
-pip install -e .
+pip install -e ".[dev]"
 ```
 
 Copia `.env.example` a `.env` y rellena tus claves:
@@ -146,3 +146,8 @@ python -m pytest -v
 - [ ] Conjunto de validación separado para el prompt
 - [ ] Dockerfile y GitHub Actions con `pytest`
 - [ ] Autenticación y `POST /search` en la API
+
+
+## Licencia
+
+MIT. Consulta el archivo [LICENSE](LICENSE).
